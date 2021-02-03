@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<HTML>
+      <HEAD>
+	         <TITLE>Donor form </TITLE>
+			 <style> 
+			 form{text-align:center;}
+			 </style>
+      </HEAD>
+      <BODY style="background-color:#E5E7E9">
+	         <h1 style="color:red;font-family:calibri">Donor information</h1>
+             <form>
+			       <label for="firstname" style="font-family:calibri" ><b>First Name</b><span style="color:red">*</span></label>
+			       <input type="text" name="firstname" id="firstname" required > <br/>
+				   
+				   <label for="lastname" style="font-family:calibri"><b>Last Name</b><span style="color:red">*</span></label>
+			       <input type="text" name="lastname" id="lastname" required > <br/>
+				   
+				    <label for="Company" style="font-family:calibri"><span style="color:#E5E7E9">**</span><b>Company</b></label>
+			       <input type="text" name="Company" id="company"  > <br/>
+				   
+				    <label for="address1" style="font-family:calibri" ><span style="color:#E5E7E9">.</span><b>Address 1</b><span style="color:red">*</span></label>
+			       <input type="text" name="address1" id="address1" required > <br/>
+				   
+				   <label for="address2" style="font-family:calibri" ><span style="color:#E5E7E9">*.</span><b>Address 2</b></label>
+			       <input type="text" name="address2" id="address2"  > <br/>
+				   
+				   <label for="city" style="font-family:calibri"><span style="color:#E5E7E9">*****.</span><b>City</b><span style="color:red">*</span></label>
+			       <input type="text" name="city" id="city" required > <br/>
+				   
+				   <label for="state" style="font-family:calibri"><span style="color:#E5E7E9">****</span><b>State</b><span style="color:red">*</span></label>
+			       <select name="state" style="width:163px;">
+						         <option value="California">California</option>
+								 <option value="Texas"   > Texas</option>
+								 <option value="Pennsylvania"> Pennsylvania</option>
+								 <option value="NewYork"> NewYork</option>
+								 <option value="Michigan"  > Michigan</option>
+				   </select><br/>
+				   
+				   <label for="zipCode" style="font-family:calibri" ><span style="color:#E5E7E9">..</span><b>Zip Code</b><span style="color:red">*</span></label>
+			       <input type="text" name="zipcode" id="zipCode" required >   <br/>
+					
+					<label for="country" style="font-family:calibri"><span style="color:#E5E7E9">.*</span><b>Country</b><span style="color:red">*</span></label>
+			       <select name="country" style="width:163px;">
+						         <option value="USA" >USA</option>
+								 <option value="Canada"   > Canada</option>
+								 <option value="Mexico"> Mexico</option>
+								 <option value="Brazil"> Brazil</option>
+								 <option value="Argentina"  > Argentina</option> 
+				   </select><br/>
+				   
+				   <label for="Phone" style="font-family:calibri"><span style="color:#E5E7E9">****</span><b>Phone</b></label>
+			       <input type="text" name="phone" id="phone" > <br/>
+				   
+				   <label for="Fax" style="font-family:calibri"><span style="color:#E5E7E9">******.</span><b>Fax</b></label>
+			       <input type="text" name="Fax" id="fax" > <br/>
+				   
+				   <label for="Email" style="font-family:calibri"><span style="color:#E5E7E9">***.</span><b>Email</b><span style="color:red">*</span></label>
+			       <input type="email" name="email" id="email" required > <br/>
+				   
+				   <label for="donationAmount" style="font-family:calibri"><b>Donation Amount</b><span style="color:red">*</span></label>
+				   <input type="radio" name="none" id="none" value="None">None
+			       <input type="radio" name="50" id="50" value="$50">$50
+			       <input type="radio" name="100" id="100" value="$100">$100
+			       <input type="radio" name="250" id="250" value="$250">$250
+				   <input type="radio" name="other" id="other" value="Other">Other
+				   
+				   <p style="font-family:calibri"><small>(Check a button or type in your amount)</small><span > <label ><b>Other Amount $</b></label></span><input type="text" name="otherAmount" id="OtherAmount" required > <br/></p>
+				   <label  style="font-family:calibri" ><b>Recurring Donation</b><small>(check if yes)</small></label> 
+				   <input type="checkbox" name="r1" id="r1" value="recurringDonation" ><small>I am interested in giving on a regular basis</small><br/>
+				   
+				   <label for="monthlyCreditCard" >Monthly credit card $</label>
+				   <input type="text" name="amount" style="width:50px;"> 				   
+				   <label  style="font-family:calibri">For</label>
+			       <input type="text" name="lastname" id="lastname" style="width:50px;" > 			   
+		    	   <label for="Company" style="font-family:calibri">Months</label>
+				   
+				   
+             </form>			 
+			 <h2 style="color:red;font-family:calibri;font-size:32px">Honorarium and memorial donation information</h2>
+		     <form>
+			         <label style="font-family:calibri" ><b>I would like to make this donation</b></label>
+					 <input type="radio" name="To Honor" id="toHonor" value="toHonor">To Honor 
+			         <input type="radio" name="In Memory of" id="inMemoryOf" value="inMemoryOf">In Memory of<br/>
+					 
+					 <label for="name" style="font-family:calibri" ><b>Name</b></label>
+			         <input type="text" name="name" id="name" > <br/>
+					 
+					 <label for="acknowledge" style="font-family:calibri" ><b>Acknowledge Donation to</b></label>
+			         <input type="text" name="acknowledge" id="acknowledge" > <br/>
+					 
+					 <label for="address" style="font-family:calibri" ><b>Adress</b></label>
+			         <input type="text" name="address" id="adress" > <br/>
+					
+					 <label for="city" style="font-family:calibri" ><b>City</b></label>
+			         <input type="text" name="city" id="city" > <br/>
+					 
+					 <label for="name" style="font-family:calibri" ><b>State/b></label>
+					 <select name="state" style="width:163px;">
+						         <option value="California">California</option>
+								 <option value="Texas"   > Texas</option>
+								 <option value="Pennsylvania"> Pennsylvania</option>
+								 <option value="NewYork"> NewYork</option>
+								 <option value="Michigan"  > Michigan</option>
+				     </select><br/>
+				   
+				     <label for="zip" style="font-family:calibri" ><b>Zip</b></label>
+			         <input type="text" name="zip" id="zip" > <br/>
+				 
+             </form>	
+             <h3 style="color:red;font-family:calibri;font-size:32px;align:left">Additional information</h3>		
+             		  
+			 <p><small> Plese enter your name,company or organization as you would like to appear in our publications:</small></p>
+		     <label for="name" style="font-family:calibri" ><b>Name</b></label>
+		     <input type="text" name="name" id="name" > <br/>
+			 
+			 <input type="checkbox" name="r2" id="r2" value="" ><small>I would like my gift to remain anonymous</small><br/>
+			 <input type="checkbox" name="r3" id="r3" value="" ><small>My employer offers a matching gift program.I will mail the matching gift form.</small><br/>
+			 <input type="checkbox" name="r4" id="r4" value="" ><small>Plese save the cost of acknowledging this gift by not mailing a thank you letter</small><br/>
+			 
+		     <label for="comments" style="font-family:calibri" ><b>Comments</b></label><p style="font-family:calibri"><small>(Please type any questions or feedback here)</small></p>
+			 <textarea col="5" rows="3"> </textarea></br>
+			 
+			 <label for="contact" style="font-family:calibri" ><b>How may we contact you?</b></label>
+			 <input type="checkbox" name="r5" id="r5" value="" ><small>E-mail</small><br/>
+			 <input type="checkbox" name="r6" id="r6" value="" ><small>Postal mail</small><br/>
+			 <input type="checkbox" name="r7" id="r7" value="" ><small>Telephone</small><br/>
+			 <input type="checkbox" name="r7" id="r7" value="" ><small>Fax</small><br/>
+			 
+			 <p><small> I would like to receive newsletters and information about special events day:</small></p>
+			 <input type="checkbox" name="r8" id="r8" value="" ><small>E-mail</small><br/>
+			 <input type="checkbox" name="r9" id="r9" value="" ><small>Postal Mail</small><br/>
+			 <input type="checkbox" name="r10" id="r10" value="" ><small>I would like information about volunteering with the</small><br/>
+			 
+			<div>
+			             
+			           <input type="reset" value="Reset"  >
+					   <input type="button" value="Continue" >
+		    </div> <br/>
+             <p> &#128274;<small> Donate online with confidence .You are on a secure server.</small></p>
+              <p><small> If you have any problems or questions,please contact support.</small></p>			 
+			
+      </BODY>
+
+
+</HTML>
