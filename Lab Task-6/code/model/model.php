@@ -2,17 +2,7 @@
 
 require_once 'db_connect.php';
 
-function searchProduct($name){
-    $conn = db_conn();
-    $selectQuery = "SELECT * FROM `products` WHERE Name LIKE '%$name%'"; 
-    try{
-        $stmt = $conn->query($selectQuery);
-    }catch(PDOException $e){
-        echo $e->getMessage();
-    }
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $rows;
-}
+
 
 
 
@@ -61,32 +51,6 @@ function login($Data)
 }
 
 
-function showAllData(){
-	$conn = db_conn();
-    $selectQuery = 'SELECT * FROM `products` ';
-    try{
-        $stmt = $conn->query($selectQuery);
-    }catch(PDOException $e){
-        echo $e->getMessage();
-    }
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $rows;
-}
-
-function deleteProduct($id){
-	$conn = db_conn();
-    $selectQuery = "DELETE FROM `products` WHERE id = ?";
-    try{
-        $stmt = $conn->prepare($selectQuery);
-        $stmt->execute([$id]);
-    }catch(PDOException $e){
-        echo $e->getMessage();
-    }
-    $conn = null;
-
-    return true;
-}
-
 function showData($columnName)
 {
 	$conn = db_conn();
@@ -116,13 +80,13 @@ function updateProfile($username, $data){
     $conn = null;
     return true;
 }
-function updatePass($username, $data){
+function updatePass($data){
     $conn = db_conn();
     $selectQuery = "UPDATE `instructor` set  password = ?,  where username = ?";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-        	 $data['password'], $username
+        	 $data['npassword'], $data[username]
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();

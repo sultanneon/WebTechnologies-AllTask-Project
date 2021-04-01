@@ -3,9 +3,9 @@ session_start();
 require_once '../model/model.php';
 
 if(isset($_POST['submit'])) {
-	$data['password'] = $_POST['password'];
-	$s= $_SESSION['username'];
-  if (updatePass($s,$data)) {
+	$data['npassword'] = $_POST['npassword'];
+	$data['username']= $_POST['username'];
+  if (updatePass($data)) {
   	header('Location: ../viewProfile_view.php');
   }
 } 

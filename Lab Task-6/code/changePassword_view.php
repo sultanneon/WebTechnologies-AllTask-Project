@@ -31,12 +31,15 @@ session_start();
       <legend><b>CHANGE PASSWORD</b></legend>
       <form  action="controller/changePassword_controller.php?id=<?php echo $_SESSION['username'] ?>" method="post" enctype="multipart/form-data">
 	    <h3 align="center"> </p>
-			  
+			
+          <lebel>Username:</lebel> 
+		  <input type="text" name="username">        
+          <br>			
 		  <lebel>Current Password:</lebel> 
 		  <input type="text" name="cpassword">        
           <br>
           <lebel style="color:green">New Password:</lebel>
-          <input type="text" name="password" >         
+          <input type="text" name="npassword" >         
           <br>
           <lebel style="color:Red">Retype New Password:</lebel>
           <input type="text" name="rnpassword" >        

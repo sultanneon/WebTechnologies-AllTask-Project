@@ -29,7 +29,8 @@
                 <br><br>
 				
                 <hr>
-                <input type="checkbox" name="Remember me"> Remember Me <br><br>
+                <input type="checkbox" name="rememberMe"> Remember Me <br><br>
+				
                 <input type="submit" name="submit" value="Submit"> 				
 				<a href="forgotPassword_view.php">Forgot Password?</a>
                 

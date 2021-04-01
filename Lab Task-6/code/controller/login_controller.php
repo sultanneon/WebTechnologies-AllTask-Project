@@ -5,6 +5,13 @@ require_once '../model/model.php';
 
 if (isset($_POST['submit']))
 {
+	
+	if(isset($_POST['rememberMe']))
+    {
+    $time = time();
+    setcookie('username', $_POST['username'], $time+50);
+    setcookie('password', $_POST['password'], $time+50);
+    }
 	$data['username'] = $_POST['username'];
 	$data['password'] = $_POST['password'];
 	
